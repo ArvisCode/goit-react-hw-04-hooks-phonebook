@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { FaTrash, FaUserTie } from 'react-icons/fa';
 import css from './Contact.module.css';
 
-function Contact({ name, number, onDeleteContact, contactId }) {
+export default function Contact({ name, number, onDeleteContact, contactId }) {
   return (
     <>
       <div className={css.wrapper}>
@@ -30,5 +30,3 @@ Contact.prototype = {
   number: PropTypes.string.isRequired,
   onDeleteContact: PropTypes.func.isRequired,
 };
-
-export default Contact;

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './Filter.module.css';
 
-function Filter({ filter, changeFilter }) {
+export default function Filter({ filter, changeFilter }) {
   return (
     <label className={css.label}>
       <p className={css.text}>Find contacts by name</p>
@@ -19,5 +19,3 @@ Filter.prototype = {
   filter: PropTypes.string.isRequired,
   changeFilter: PropTypes.func.isRequired,
 };
-
-export default Filter;
